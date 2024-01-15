@@ -1,0 +1,250 @@
+body{
+    overflow-x: hidden;
+}
+
+
+nav{
+  background: #023e8a;
+  height: 80px;
+  width: 100%;
+  z-index: 3;
+}
+
+.pt-name{
+     font-size: 22px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: semibold;
+}
+nav ul li a.active,nav ul li a:hover{
+  transition: ease-in-out .5s;
+  color: #4361ee;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+section.home{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    background-repeat: no-repeat;
+    background-image: url("../img/BG_2.jpg");
+    background-size: cover;
+}
+
+hero{
+    position: relative;
+}
+
+.data-text h3{
+    font-size: 70px;
+}
+
+.data-text p{
+    font-size: 20px;
+}
+
+.data-text{
+    position: absolute;
+    bottom: 0;
+    top: 35%;
+    width: 100%;
+}
+
+section.visimisi{
+    min-height: 100vh;
+    padding-top: 3em;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+section.visimisi h4,.activity h4{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section.visimisi .kotak{
+background: rgba(255, 255, 255, 0.68);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width: 350px;
+height: 150px;
+display: flex;
+align-items: center;
+border-left: 10px solid #023e8a;
+}
+
+section.visimisi .kotak q{
+  font-style: italic;
+}
+
+.values{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.kotak_values{
+background: rgba(255, 255, 255, 0.68);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width: 150px;
+height: 150px;
+border-radius: 10px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.kotak_values h5{
+  font-weight: bold;
+}
+
+.kotak_values:nth-child(even){
+  background-color: #023e8a;
+  color: white;
+}
+
+section.activity{
+  height: 600px;
+}
+
+.carousel-item{
+  height:450px;
+  width: 100%;
+}
+
+section.job h4.section-title{
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 8rem;
+}
+
+.job {
+  min-height: 100vh;
+}
+
+.pekerjaan{
+  width: 250px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.68);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 10px;  
+}
+
+.list-job{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+.navbar{
+background-color: #000;
+color: white;
+}
+
+.nav_list ul li a{
+color: white;
+text-transform: uppercase;
+font-weight: semibold;
+transition: ease-in-out .2s;
+}
+
+ ul li a:hover{
+    color: #4361ee;
+}
+
+
+.logo{
+    width: 64px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    background: #000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: white;
+  }
+  ul li a:hover,a.active{
+    background: none;
+    color: #4361ee;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  .pt-name{
+     font-size: 18px;
+}
+
+.kotak_values{
+  align-items: center;
+}
+}

@@ -1,0 +1,1771 @@
+CRITICAL - 2024-01-14 04:19:05 --> ParseError: syntax error, unexpected end of file, expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 04:30:37 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 04:32:55 --> ParseError: syntax error, unexpected identifier "view"
+in APPPATH\Controllers\Home.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 05:39:05 --> ErrorException: passthru(): Unable to fork ["C:\xampp\php\php.exe" -S localhost:8080 -t "E:\CODINGAN\belajar-ci4\public\\" "E:\CODINGAN\belajar-ci4\system\Commands\Server/rewrite.php"]
+in SYSTEMPATH\Commands\Server\Serve.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'passthru(): Unable to fork ["C:\\xampp\\php\\php.exe" -S localhost:8080 -t "E:\\CODINGAN\\belajar-ci4\\public\\\\" "E:\\CODINGAN\\belajar-ci4\\system\\Commands\\Server/rewrite.php"]', 'E:\\CODINGAN\\belajar-ci4\\system\\Commands\\Server\\Serve.php', 109)
+ 2 SYSTEMPATH\Commands\Server\Serve.php(109): passthru('"C:\\xampp\\php\\php.exe" -S localhost:8080 -t "E:\\CODINGAN\\belajar-ci4\\public\\\\" "E:\\CODINGAN\\belajar-ci4\\system\\Commands\\Server/rewrite.php"', null)
+ 3 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Server\Serve->run([])
+ 4 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('serve', [])
+ 5 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-01-14 08:26:59 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:26:59 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:27:55 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:27:55 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:27:57 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:27:57 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:28:03 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:28:03 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:28:42 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:28:42 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:29:21 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:29:21 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:35:14 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:35:14 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-14 08:36:55 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-14 08:36:56 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\belajar-ci4\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\belajar-ci4\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\belajar-ci4\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\belajar-ci4\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-01-14 12:23:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:23:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 12:23:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:23:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 12:23:53 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:23:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 12:24:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:24:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 12:24:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:24:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 12:24:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:24:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 12:24:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'recruitment', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar-ci4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->index()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-14 12:24:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Staff.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 12:49:51 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\staffjob.php on line 15.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('staffjob', [], true)
+ 3 APPPATH\Controllers\Staff.php(19): view('staffjob', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 12:50:09 --> ErrorException: Undefined array key "expired_data"
+in APPPATH\Views\staffjob.php on line 12.
+ 1 APPPATH\Views\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expired_data"', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(19): view('staffjob', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 12:50:12 --> ErrorException: Undefined array key "expired_data"
+in APPPATH\Views\staffjob.php on line 12.
+ 1 APPPATH\Views\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expired_data"', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(19): view('staffjob', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:17:07 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Views\staffjob.php on line 6.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('staffjob', [], true)
+ 3 APPPATH\Controllers\Staff.php(19): view('staffjob', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:18:19 --> ParseError: syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\staffjob.php on line 30.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('staffjob', [], true)
+ 3 APPPATH\Controllers\Staff.php(19): view('staffjob', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:25:05 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:26:28 --> ParseError: syntax error, unexpected identifier "pub", expecting "function" or "const"
+in APPPATH\Controllers\Staff.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Staff.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Staff')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Staff')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Staff', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:28:42 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Views\staffjob.php on line 12.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('staffjob', [], true)
+ 3 APPPATH\Controllers\Staff.php(19): view('staffjob', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:44:13 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Views\form.php on line 2.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Staff.php(25): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:49:27 --> ParseError: syntax error, unexpected token "echo", expecting variable or "{" or "$"
+in APPPATH\Controllers\Staff.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Staff.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Staff')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Staff')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Staff', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 13:51:45 --> mysqli_sql_exception: Unknown column 'job' in 'where clause' in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-14 13:51:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:45 --> [Caused by] mysqli_sql_exception: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 13:51:50 --> mysqli_sql_exception: Unknown column 'job' in 'where clause' in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-14 13:51:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:50 --> [Caused by] mysqli_sql_exception: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 13:51:52 --> mysqli_sql_exception: Unknown column 'job' in 'where clause' in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-14 13:51:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:52 --> [Caused by] mysqli_sql_exception: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 13:51:54 --> mysqli_sql_exception: Unknown column 'job' in 'where clause' in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\belajar-ci4\app\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+#8 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-14 13:51:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:51:54 --> [Caused by] mysqli_sql_exception: Unknown column 'job' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `staff_jobs`
+WHERE `job` = \'2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `staff_jobs`
+WHERE `job` = :job:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Staff.php(25): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:52:11 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Staff.php on line 26.
+ 1 APPPATH\Controllers\Staff.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Staff.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:52:13 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Staff.php on line 26.
+ 1 APPPATH\Controllers\Staff.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Staff.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:52:15 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Staff.php on line 26.
+ 1 APPPATH\Controllers\Staff.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Staff.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:52:16 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Staff.php on line 26.
+ 1 APPPATH\Controllers\Staff.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Staff.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:54:49 --> ParseError: syntax error, unexpected token ";", expecting variable or "{" or "$"
+in APPPATH\Views\form.php on line 7.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Staff.php(27): view('form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:55:16 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\form.php on line 7.
+ 1 APPPATH\Views\form.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\form.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('form', [], true)
+ 5 APPPATH\Controllers\Staff.php(27): view('form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 13:55:17 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\form.php on line 7.
+ 1 APPPATH\Views\form.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\form.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('form', [], true)
+ 5 APPPATH\Controllers\Staff.php(27): view('form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 14:48:36 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 14:49:10 --> ErrorException: Undefined variable $router
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\belajar-ci4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 14:49:14 --> ErrorException: Undefined variable $router
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\belajar-ci4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:09:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Staff.php(18): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:10:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Staff.php(18): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:11:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Staff.php(30): view('form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:11:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\pages\form.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\form.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/form', [], true)
+ 7 APPPATH\Controllers\Staff.php(30): view('pages/form', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:11:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\pages\form.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\form.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/form', [], true)
+ 7 APPPATH\Controllers\Staff.php(30): view('pages/form', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:12:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\admin\addJobs.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\addJobs.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/addJobs', [], true)
+ 7 APPPATH\Controllers\Admin.php(8): view('admin/addJobs')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:29:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\admin\addJobs.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\addJobs.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/addJobs', [], true)
+ 7 APPPATH\Controllers\Admin.php(8): view('admin/addJobs')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:29:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\admin\addJobs.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\addJobs.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/addJobs', [], true)
+ 7 APPPATH\Controllers\Admin.php(8): view('admin/addJobs')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:30:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\admin\addJobs.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\addJobs.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/addJobs', [], true)
+ 7 APPPATH\Controllers\Admin.php(8): view('admin/addJobs')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:31:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\admin\addJobs.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\addJobs.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/addJobs', [], true)
+ 7 APPPATH\Controllers\Admin.php(8): view('admin/addJobs')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:31:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 3 APPPATH\Views\admin\addJobs.php(1): CodeIgniter\View\View->include('header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\addJobs.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/addJobs', [], true)
+ 7 APPPATH\Controllers\Admin.php(8): view('admin/addJobs')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 15:54:29 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\StaffModel"
+in SYSTEMPATH\Model.php on line 766.
+ 1 SYSTEMPATH\Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\StaffModel')
+ 2 SYSTEMPATH\BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Admin.php(29): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:04:57 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Admin.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\belajar-ci4\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:05:18 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/staffjobs" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/staffjobs')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(29): redirect('/staffjobs')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:06:48 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/staffjobs" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/staffjobs')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(29): redirect('/staffjobs')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:19:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:19:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:19:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:19:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:20:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:20:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:22:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('/layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('/layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:22:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('/layout/header', null, true)
+ 3 APPPATH\Views\admin\adminHome.php(1): CodeIgniter\View\View->include('/layout/header')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\adminHome.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/adminHome', [], true)
+ 7 APPPATH\Controllers\Admin.php(10): view('admin/adminHome')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:41:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(41): redirect('/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:42:51 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(41): redirect('/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:52:42 --> ErrorException: Undefined variable $data
+in APPPATH\Views\admin\editJobs.php on line 14.
+ 1 APPPATH\Views\admin\editJobs.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\editJobs.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\admin\\editJobs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/editJobs', [], true)
+ 5 APPPATH\Controllers\Admin.php(52): view('admin/editJobs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:55:05 --> Error: Call to a member function first() on array
+in APPPATH\Controllers\Admin.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 16:55:07 --> Error: Call to a member function first() on array
+in APPPATH\Controllers\Admin.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:11:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(41): redirect('/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:25:45 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 6.
+ 1 APPPATH\Views\pages\staffjob.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Operator.php(19): view('pages/staffjob', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:26:17 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\operatorjob.php on line 6.
+ 1 APPPATH\Views\pages\operatorjob.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\operatorjob.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\operatorjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjob', [], true)
+ 5 APPPATH\Controllers\Operator.php(19): view('pages/operatorjob', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:26:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/operatorjobs.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/operatorjobs.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjobs', [], true)
+ 3 APPPATH\Controllers\Operator.php(19): view('pages/operatorjobs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:26:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/operatorjobs.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/operatorjobs.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjobs', [], true)
+ 3 APPPATH\Controllers\Operator.php(19): view('pages/operatorjobs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:26:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/operatorjobs.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/operatorjobs.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjobs', [], true)
+ 3 APPPATH\Controllers\Operator.php(19): view('pages/operatorjobs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:26:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/operatorjobs.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/operatorjobs.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjobs', [], true)
+ 3 APPPATH\Controllers\Operator.php(19): view('pages/operatorjobs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:26:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/operatorjobs.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/operatorjobs.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjobs', [], true)
+ 3 APPPATH\Controllers\Operator.php(19): view('pages/operatorjobs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:27:02 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\operatorjob.php on line 6.
+ 1 APPPATH\Views\pages\operatorjob.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\operatorjob.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\operatorjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/operatorjob', [], true)
+ 5 APPPATH\Controllers\Operator.php(19): view('pages/operatorjob', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Operator->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operator))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 17:45:49 --> mysqli_sql_exception: Unknown column 'job_title' in 'field list' in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `op...', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `op...')
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `op...')
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `op...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\belajar-ci4\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\belajar-ci4\app\Controllers\Admin.php(103): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+#10 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-01-14 17:45:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job_title' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (:job_title:, :description:, :expired_date:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:45:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job_title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'Operator Sewing\', \'Berpenagalaman minimal 1 tahun di posisi yang sama Bersedia di tempatkan di Purwakarta, Jawa Barat\', \'2024-01-24\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'Operator Sewing\', \'Berpenagalaman minimal 1 tahun di posisi yang sama Bersedia di tempatkan di Purwakarta, Jawa Barat\', \'2024-01-24\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (:job_title:, :description:, :expired_date:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:45:49 --> [Caused by] mysqli_sql_exception: Unknown column 'job_title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'Operator Sewing\', \'Berpenagalaman minimal 1 tahun di posisi yang sama Bersedia di tempatkan di Purwakarta, Jawa Barat\', \'2024-01-24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'Operator Sewing\', \'Berpenagalaman minimal 1 tahun di posisi yang sama Bersedia di tempatkan di Purwakarta, Jawa Barat\', \'2024-01-24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'Operator Sewing\', \'Berpenagalaman minimal 1 tahun di posisi yang sama Bersedia di tempatkan di Purwakarta, Jawa Barat\', \'2024-01-24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (:job_title:, :description:, :expired_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+ERROR - 2024-01-14 17:46:33 --> mysqli_sql_exception: Unknown column 'job_title' in 'field list' in C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar-ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `op...', 0)
+#1 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `op...')
+#2 C:\xampp\htdocs\belajar-ci4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `op...')
+#3 C:\xampp\htdocs\belajar-ci4\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `op...', Array, false)
+#4 C:\xampp\htdocs\belajar-ci4\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\belajar-ci4\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\belajar-ci4\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\belajar-ci4\app\Controllers\Admin.php(103): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+#10 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\belajar-ci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\belajar-ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\belajar-ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-01-14 17:46:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job_title' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (:job_title:, :description:, :expired_date:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:46:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'job_title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'\', \'\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (:job_title:, :description:, :expired_date:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:46:33 --> [Caused by] mysqli_sql_exception: Unknown column 'job_title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'\', \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (\'\', \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operator_jobs` (`job_title`, `description`, `expired_date`) VALUES (:job_title:, :description:, :expired_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->saveOp()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:53:54 --> BadMethodCallException: Call to undefined method App\Models\StaffModel::updateOp
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Model->__call('updateOp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->updateOp('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:54:07 --> BadMethodCallException: Call to undefined method App\Models\StaffModel::updateOp
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Model->__call('updateOp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->updateOp('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:56:11 --> BadMethodCallException: Call to undefined method App\Models\OperatorModel::updateOp
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Model->__call('updateOp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->updateOp('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:57:00 --> BadMethodCallException: Call to undefined method App\Models\OperatorModel::updateOp
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Model->__call('updateOp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->updateOp('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:58:31 --> BadMethodCallException: Call to undefined method App\Models\OperatorModel::updateOp
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Model->__call('updateOp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->updateOp('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 17:58:38 --> BadMethodCallException: Call to undefined method App\Models\OperatorModel::updateOp
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Model->__call('updateOp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->updateOp('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 18:24:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\form.php on line 7.
+ 1 APPPATH\Views\pages\form.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\form.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/form', [], true)
+ 5 APPPATH\Controllers\Staff.php(30): view('pages/form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 18:25:54 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\form.php on line 7.
+ 1 APPPATH\Views\pages\form.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\form.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/form', [], true)
+ 5 APPPATH\Controllers\Staff.php(30): view('pages/form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->detail('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:31:24 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 12.
+ 1 APPPATH\Views\pages\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(11): view('pages/staffjob')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:31:25 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 12.
+ 1 APPPATH\Views\pages\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(11): view('pages/staffjob')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:31:26 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 12.
+ 1 APPPATH\Views\pages\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(11): view('pages/staffjob')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:31:27 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 12.
+ 1 APPPATH\Views\pages\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(11): view('pages/staffjob')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:31:36 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 12.
+ 1 APPPATH\Views\pages\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(11): view('pages/staffjob')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:32:42 --> ErrorException: Undefined variable $staff
+in APPPATH\Views\pages\staffjob.php on line 12.
+ 1 APPPATH\Views\pages\staffjob.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\belajar-ci4\\app\\Views\\pages\\staffjob.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/staffjob', [], true)
+ 5 APPPATH\Controllers\Staff.php(11): view('pages/staffjob')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Staff->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Staff))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 19:54:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin_page.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin_page.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin_page', [], true)
+ 3 APPPATH\Controllers\Admin.php(13): view('admin_page')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+INFO - 2024-01-14 20:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-14 20:07:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\AuthController.php(26): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+CRITICAL - 2024-01-14 20:07:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\AuthController.php(26): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar-ci4\\public\\index.php')
+INFO - 2024-01-14 20:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-14 20:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-14 20:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
